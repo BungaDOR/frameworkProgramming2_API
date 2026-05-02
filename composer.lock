@@ -4,7 +4,11 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
+<<<<<<< HEAD
     "content-hash": "215c0d5392a3662bf7f9025d2b430c7f",
+=======
+    "content-hash": "c514d8f7b9fc5970bdd94287905ef584",
+>>>>>>> 881f36ef3aa8a020094eae3537029ad9e6cbca8d
     "packages": [
         {
             "name": "brick/math",
@@ -1053,6 +1057,7 @@
             "time": "2025-08-22T14:27:06+00:00"
         },
         {
+<<<<<<< HEAD
             "name": "intervention/gif",
             "version": "4.2.4",
             "source": {
@@ -1197,6 +1202,8 @@
             "time": "2026-02-19T13:11:17+00:00"
         },
         {
+=======
+>>>>>>> 881f36ef3aa8a020094eae3537029ad9e6cbca8d
             "name": "laravel/framework",
             "version": "v12.49.0",
             "source": {
@@ -1478,6 +1485,7 @@
             "time": "2026-01-27T02:55:06+00:00"
         },
         {
+<<<<<<< HEAD
             "name": "laravel/sanctum",
             "version": "v4.3.1",
             "source": {
@@ -1541,6 +1549,8 @@
             "time": "2026-02-07T17:19:31+00:00"
         },
         {
+=======
+>>>>>>> 881f36ef3aa8a020094eae3537029ad9e6cbca8d
             "name": "laravel/serializable-closure",
             "version": "v2.0.8",
             "source": {

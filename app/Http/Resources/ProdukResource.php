@@ -7,11 +7,6 @@ use Illuminate\Http\Resources\Json\JsonResource;
 
 class ProdukResource extends JsonResource
 {
-    /**
-     * Transform the resource into an array.
-     *
-     * @return array<string, mixed>
-     */
     public function toArray(Request $request): array
     {
         return [
@@ -21,8 +16,7 @@ class ProdukResource extends JsonResource
             'harga' => $this->harga,
             'stok' => $this->stok,
             'deskripsi' => $this->deskripsi,
-            //'gambar' => $this->gambar,
-            'gambar' => $this->gambar ? asset('storage/' .$this->gambar) : null,
+            'gambar' => $this->gambar ? asset('storage/' . $this->gambar) : null,
             'kategori' => $this->kategori,
             'expired_date' => $this->expiredDate,
             'rating' => $this->rating,

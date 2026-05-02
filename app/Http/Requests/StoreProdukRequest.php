@@ -9,19 +9,11 @@ use Illuminate\Validation\Rule;
 
 class StoreProdukRequest extends FormRequest
 {
-    /**
-     * Determine if the user is authorized to make this request.
-     */
     public function authorize(): bool
     {
         return true;
     }
 
-    /**
-     * Get the validation rules that apply to the request.
-     *
-     * @return array<string, \Illuminate\Contracts\Validation\ValidationRule|array<mixed>|string>
-     */
     public function rules(): array
     {
         // STORE
@@ -46,13 +38,12 @@ class StoreProdukRequest extends FormRequest
                 'string',
                 Rule::unique('produk_apis', 'kodeBarang')->ignore($this->route('id'))
             ],
-            'namaBarang' => 'required|string|max:255',
-            'harga' => 'required|numeric|min:0',
-            'stok' => 'required|integer|min:0',
+            'namaBarang' => 'sometimes|string|max:255',
+            'harga' => 'sometimes|numeric|min:0',
+            'stok' => 'sometimes|integer|min:0',
             'deskripsi' => 'nullable|string',
-            //'gambar' => 'nullable|string',
             'gambar' => 'nullable|image|mimes:jpeg,png,jpg|max:2048',
-            'kategori' => 'nullable|string',
+            'kategori' => 'sometimes|string',
             'expiredDate' => 'nullable|date',
             'rating' => 'nullable|numeric|min:0|max:5'
         ];
